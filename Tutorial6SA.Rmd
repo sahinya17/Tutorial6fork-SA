@@ -28,3 +28,17 @@ geom_point()
 grid.arrange(p1, p2)
 ```
 
+## let's have fun
+
+```{r}
+name <- c("Smriti", "Sahinya")
+Scores <- c(95,100)
+random <- data.frame(name,Scores)
+fig <- random %>% 
+  ggplot(aes(x=name,y=Scores)) +
+  geom_bar(stat = "identity")
+fig
+```
+
+
+
